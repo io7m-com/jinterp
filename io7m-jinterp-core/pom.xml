@@ -13,7 +13,7 @@
   <artifactId>io7m-jinterp-core</artifactId>
 
   <packaging>jar</packaging>
-  <description>Noise generation (Core)</description>
+  <description>Interpolation functions (Core)</description>
   <url>http://mvn.io7m.com/${project.artifactId}/</url>
   <name>${project.artifactId}</name>
 
