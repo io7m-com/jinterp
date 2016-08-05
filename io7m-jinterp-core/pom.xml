@@ -56,7 +56,7 @@
         <configuration>
           <instructions>
             <Export-Package>
-              com.io7m.jinterp.core
+              com.io7m.jinterp
             </Export-Package>
           </instructions>
         </configuration>
