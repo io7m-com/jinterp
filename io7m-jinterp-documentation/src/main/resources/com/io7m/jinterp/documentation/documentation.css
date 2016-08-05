@@ -20,14 +20,23 @@
   font-weight: bold;
 }
 
+.emphasis,
+.term
+{
+  font-style: italic;
+}
+
 .attribute,
 .class,
 .command,
 .constant,
 .element,
+.expression,
 .file,
 .function,
 .keyword,
+.parameter,
+.variable,
 .type
 {
   font-family: monospace;
@@ -61,3 +70,4 @@
   font-size:     8pt;
   font-family:   monospace;
 }
+
