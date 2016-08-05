@@ -8,7 +8,7 @@
   <parent>
     <groupId>com.io7m.jinterp</groupId>
     <artifactId>io7m-jinterp</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
   </parent>
   <artifactId>io7m-jinterp-checkstyle</artifactId>
 
