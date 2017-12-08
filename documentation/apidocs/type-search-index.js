@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"com.io7m.jinterp.documentation","l":"Documentation"},{"p":"com.io7m.jinterp","l":"InterpolationD"},{"p":"com.io7m.jinterp","l":"InterpolationF"},{"p":"com.io7m.jinterp","l":"InterpolationFunctionDType"},{"p":"com.io7m.jinterp","l":"InterpolationFunctionFType"}]
