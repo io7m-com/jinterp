@@ -1,10 +1,10 @@
 /*
  * Copyright © 2014 <code@io7m.com> http://io7m.com
- * 
+ *
  * Permission to use, copy, modify, and/or distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
  * copyright notice and this permission notice appear in all copies.
- * 
+ *
  * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
  * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
  * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
@@ -14,30 +14,13 @@
  * IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-package com.io7m.jinterp.documentation;
-
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.URL;
-
 /**
- * Functions for retrieving the documentation.
+ * Interpolation functions (Documentation)
  */
 
-public final class NDocumentation
+module com.io7m.jinterp.documentation
 {
-  public static URI getDocumentationXMLLocation()
-  {
-    try {
-      final URL url =
-        NDocumentation.class
-          .getResource("/com/io7m/jinterp/documentation/documentation.xml");
-      assert url != null;
-      final URI uri = url.toURI();
-      assert uri != null;
-      return uri;
-    } catch (final URISyntaxException e) {
-      throw new AssertionError(e);
-    }
-  }
+  requires com.io7m.jinterp.core;
+
+  exports com.io7m.jinterp.documentation;
 }

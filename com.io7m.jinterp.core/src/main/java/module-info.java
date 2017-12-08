@@ -1,5 +1,5 @@
 /*
- * Copyright © 2015 <code@io7m.com> http://io7m.com
+ * Copyright © 2014 <code@io7m.com> http://io7m.com
  *
  * Permission to use, copy, modify, and/or distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -15,8 +15,11 @@
  */
 
 /**
- * Documentation.
+ * Interpolation functions (Core)
  */
 
-package com.io7m.jinterp.documentation;
-
+module com.io7m.jinterp.core
+{
+  requires com.io7m.junreachable.core;
+  exports com.io7m.jinterp;
+}

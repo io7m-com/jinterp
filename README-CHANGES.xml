@@ -1,50 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<c:changelog xmlns:c="http://schemas.io7m.com/changelog/2.0.0">
-  <c:project>com.io7m.jinterp</c:project>
-
-  <c:release c:ticket-system="com.github.io7m.jinterp">
-    <c:date>2017-04-18</c:date>
-    <c:version>1.0.2</c:version>
-    <c:item>
-      <c:date>2017-04-18</c:date>
-      <c:type-code-fix/>
-      <c:summary>Rename project. Use the new primogenitor POM and 2017 project conventions.</c:summary>
-    </c:item>
-  </c:release>
-
-  <c:release c:ticket-system="com.github.io7m.jinterp">
-    <c:date>2016-08-05</c:date>
-    <c:version>1.0.1</c:version>
-    <c:item>
-      <c:date>2016-08-05</c:date>
-      <c:type-code-fix/>
-      <c:summary>Update POM files to 2016 standards. Update plugins.</c:summary>
-    </c:item>
-    <c:item>
-      <c:date>2016-08-05</c:date>
-      <c:type-code-fix/>
-      <c:summary>The packaged jar is now an OSGi bundle.</c:summary>
-    </c:item>
-    <c:item>
-      <c:date>2016-08-05</c:date>
-      <c:type-code-change/>
-      <c:summary>The package will no longer compile on JDK 6 due to Checkstyle, but the compiled code is still JDK 6 compatible.</c:summary>
-    </c:item>
-  </c:release>
-
-  <c:release c:ticket-system="com.github.io7m.jinterp">
-    <c:date>2015-08-22</c:date>
-    <c:version>1.0.0</c:version>
-    <c:item>
-      <c:date>2015-08-22</c:date>
-      <c:type-code-new/>
-      <c:summary>Initial release.</c:summary>
-    </c:item>
-  </c:release>
-
-  <c:ticket-system xml:id="com.github.io7m.jinterp">
-    <c:ticket-url>http://github.com/io7m/jinterp/issues/</c:ticket-url>
-  </c:ticket-system>
-
+<?xml version="1.0" encoding="UTF-8"?><c:changelog xmlns:c="urn:com.io7m.changelog:4.0" project="com.io7m.jinterp">
+  <c:releases>
+    <c:release date="2015-08-22T00:00:00+00:00" ticket-system="com.github.io7m.jinterp" version="1.0.0">
+      <c:changes>
+        <c:change date="2015-08-22T00:00:00+00:00" summary="Initial release."/>
+      </c:changes>
+    </c:release>
+    <c:release date="2016-08-05T00:00:00+00:00" ticket-system="com.github.io7m.jinterp" version="1.0.1">
+      <c:changes>
+        <c:change date="2016-08-05T00:00:00+00:00" summary="Update POM files to 2016 standards. Update plugins."/>
+        <c:change date="2016-08-05T00:00:00+00:00" summary="The packaged jar is now an OSGi bundle."/>
+        <c:change compatible="false" date="2016-08-05T00:00:00+00:00" summary="The package will no longer compile on JDK 6 due to Checkstyle, but the compiled code is still JDK 6 compatible."/>
+      </c:changes>
+    </c:release>
+    <c:release date="2017-04-18T00:00:00+00:00" ticket-system="com.github.io7m.jinterp" version="1.0.2">
+      <c:changes>
+        <c:change date="2017-04-18T00:00:00+00:00" summary="Rename project. Use the new primogenitor POM and 2017 project conventions."/>
+      </c:changes>
+    </c:release>
+    <c:release date="2017-12-08T15:06:44+00:00" ticket-system="com.github.io7m.jinterp" version="2.0.0">
+      <c:changes>
+        <c:change compatible="false" date="2017-12-08T00:00:00+00:00" summary="Publish JDK 9 modules, require JDK 9 to build and run"/>
+        <c:change compatible="false" date="2017-12-08T15:06:44+00:00" summary="Remove jnull dependency"/>
+      </c:changes>
+    </c:release>
+  </c:releases>
+  <c:ticket-systems>
+    <c:ticket-system default="false" id="com.github.io7m.jinterp" url="http://github.com/io7m/jinterp/issues/"/>
+  </c:ticket-systems>
 </c:changelog>
-

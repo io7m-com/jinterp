@@ -8,7 +8,7 @@
   <parent>
     <groupId>com.io7m.jinterp</groupId>
     <artifactId>com.io7m.jinterp</artifactId>
-    <version>1.0.2</version>
+    <version>2.0.0</version>
   </parent>
   <artifactId>com.io7m.jinterp.documentation</artifactId>
 
@@ -30,8 +30,9 @@
 
   <dependencies>
     <dependency>
-      <groupId>com.io7m.jnull</groupId>
-      <artifactId>com.io7m.jnull.core</artifactId>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>com.io7m.jinterp.core</artifactId>
+      <version>${project.version}</version>
     </dependency>
   </dependencies>
 
@@ -166,7 +167,7 @@
         </executions>
       </plugin>
 
-      <!-- Unpack the documentation archive to the parent's generated site staging directory. -->
+      <!-- Unpack the documentation archive to the parent's generated site minisite directory. -->
       <!-- This is arguably abusive, but there appears to be no other way to achieve it. -->
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
@@ -183,7 +184,7 @@
               <verbose>true</verbose>
               <fileset>
                 <directory>${project.build.directory}/${project.name}-${project.version}.zip/${project.name}-${project.version}/</directory>
-                <outputDirectory>${project.parent.build.directory}/staging/documentation/</outputDirectory>
+                <outputDirectory>${project.parent.build.directory}/minisite/documentation/</outputDirectory>
               </fileset>
             </configuration>
           </execution>

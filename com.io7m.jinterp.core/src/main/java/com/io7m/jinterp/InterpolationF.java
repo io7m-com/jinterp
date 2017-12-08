@@ -31,15 +31,7 @@ public final class InterpolationF
 
   public static InterpolationFunctionFType getCosine()
   {
-    return new InterpolationFunctionFType() {
-      @Override public float call(
-        final float x0,
-        final float x1,
-        final float a)
-      {
-        return InterpolationF.interpolateCosine(x0, x1, a);
-      }
-    };
+    return InterpolationF::interpolateCosine;
   }
 
   /**
@@ -49,15 +41,7 @@ public final class InterpolationF
 
   public static InterpolationFunctionFType getExponential()
   {
-    return new InterpolationFunctionFType() {
-      @Override public float call(
-        final float x0,
-        final float x1,
-        final float factor)
-      {
-        return InterpolationF.interpolateExponential(x0, x1, factor);
-      }
-    };
+    return InterpolationF::interpolateExponential;
   }
 
   /**
@@ -67,15 +51,7 @@ public final class InterpolationF
 
   public static InterpolationFunctionFType getLinear()
   {
-    return new InterpolationFunctionFType() {
-      @Override public float call(
-        final float x0,
-        final float x1,
-        final float a)
-      {
-        return InterpolationF.interpolateLinear(x0, x1, a);
-      }
-    };
+    return InterpolationF::interpolateLinear;
   }
 
   /**
@@ -85,15 +61,7 @@ public final class InterpolationF
 
   public static InterpolationFunctionFType getLogarithmic()
   {
-    return new InterpolationFunctionFType() {
-      @Override public float call(
-        final float x0,
-        final float x1,
-        final float factor)
-      {
-        return InterpolationF.interpolateLogarithmic(x0, x1, factor);
-      }
-    };
+    return InterpolationF::interpolateLogarithmic;
   }
 
   /**
@@ -127,11 +95,11 @@ public final class InterpolationF
   }
 
   /**
-   * Interpolate between <code>x0</code> and <code>x1</code> based on
-   * <code>factor</code>, using an exponential scale. When
-   * <code>factor == 0</code>, the function returns <code>x0</code>, when
-   * <code>factor == 1</code>, the function returns <code>x1</code>. More
-   * formally, the function returns <code>x0 + (factor² * (x1 - x0))</code> .
+   * Interpolate between {@code x0} and {@code x1} based on
+   * {@code factor}, using an exponential scale. When
+   * {@code factor == 0}, the function returns {@code x0}, when
+   * {@code factor == 1}, the function returns {@code x1}. More
+   * formally, the function returns {@code x0 + (factor² * (x1 - x0))} .
    *
    * @param factor
    *          The interpolation factor in the range <tt>[0.0, 1.0]</tt>
@@ -179,12 +147,12 @@ public final class InterpolationF
   }
 
   /**
-   * Interpolate between <code>x0</code> and <code>x1</code> based on
-   * <code>factor</code>, using an exponential scale. When
-   * <code>factor == 0</code>, the function returns <code>x0</code>, when
-   * <code>factor == 1</code>, the function returns <code>x1</code>. More
+   * Interpolate between {@code x0} and {@code x1} based on
+   * {@code factor}, using an exponential scale. When
+   * {@code factor == 0}, the function returns {@code x0}, when
+   * {@code factor == 1}, the function returns {@code x1}. More
    * formally, the function returns
-   * <code>x0 + (sqrt(factor) * (x1 - x0))</code> .
+   * {@code x0 + (sqrt(factor) * (x1 - x0))} .
    *
    * @param factor
    *          The interpolation factor in the range <tt>[0.0, 1.0]</tt>
