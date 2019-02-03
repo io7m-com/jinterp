@@ -24,7 +24,7 @@ public interface InterpolationFunctionFType
 {
   /**
    * <p>
-   * Interpolate between <tt>x0</tt> and <tt>x1</tt> based on <tt>a</tt> such
+   * Interpolate between {@code x0} and {@code x1} based on {@code a} such
    * that:
    * </p>
    *
@@ -39,7 +39,7 @@ public interface InterpolationFunctionFType
    *          The end value
    * @param a
    *          The interpolation amount
-   * @return A value between <tt>[x0, x1]</tt>.
+   * @return A value between {@code [x0, x1]}.
    */
 
   float call(

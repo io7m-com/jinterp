@@ -66,7 +66,7 @@ public final class InterpolationD
 
   /**
    * <p>
-   * Interpolate between <tt>x0</tt> and <tt>x1</tt> based on <tt>factor</tt>
+   * Interpolate between {@code x0} and {@code x1} based on {@code factor}
    * such that:
    * </p>
    *
@@ -81,7 +81,7 @@ public final class InterpolationD
    *          The end value
    * @param factor
    *          The interpolation factor
-   * @return A value between <tt>[x0, x1]</tt>.
+   * @return A value between {@code [x0, x1]}.
    */
 
   public static double interpolateCosine(
@@ -102,12 +102,12 @@ public final class InterpolationD
    * formally, the function returns {@code x0 + (factor² * (x1 - x0))} .
    *
    * @param factor
-   *          The interpolation factor in the range <tt>[0.0, 1.0]</tt>
+   *          The interpolation factor in the range {@code [0.0, 1.0]}
    * @param x0
    *          The lower bound.
    * @param x1
    *          The upper bound.
-   * @return A value between <tt>[x0, x1]</tt>.
+   * @return A value between {@code [x0, x1]}.
    */
 
   public static double interpolateExponential(
@@ -120,8 +120,8 @@ public final class InterpolationD
 
   /**
    * <p>
-   * Linearly interpolate between <tt>x0</tt> and <tt>x1</tt> based on
-   * <tt>factor</tt> such that:
+   * Linearly interpolate between {@code x0} and {@code x1} based on
+   * {@code factor} such that:
    * </p>
    *
    * <pre>
@@ -135,7 +135,7 @@ public final class InterpolationD
    *          The end value
    * @param factor
    *          The interpolation factor
-   * @return A value between <tt>[x0, x1]</tt>.
+   * @return A value between {@code [x0, x1]}.
    */
 
   public static double interpolateLinear(
@@ -155,12 +155,12 @@ public final class InterpolationD
    * {@code x0 + (sqrt(factor) * (x1 - x0))} .
    *
    * @param factor
-   *          The interpolation factor in the range <tt>[0.0, 1.0]</tt>
+   *          The interpolation factor in the range {@code [0.0, 1.0]}
    * @param x0
    *          The lower bound.
    * @param x1
    *          The upper bound.
-   * @return A value between <tt>[x0, x1]</tt>.
+   * @return A value between {@code [x0, x1]}.
    */
 
   public static double interpolateLogarithmic(
