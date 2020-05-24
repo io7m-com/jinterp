@@ -7,6 +7,4 @@ jinterp
 [![Codacy grade](https://img.shields.io/codacy/grade/4c3763fdca444289852e7eaf2d7e68c3.png?style=flat-square)](https://www.codacy.com/app/github_79/jinterp)
 [![Codecov](https://img.shields.io/codecov/c/github/io7m/jinterp.png?style=flat-square)](https://codecov.io/gh/io7m/jinterp)
 
-See https://io7m.github.io/jinterp/ for more information.
-
 ![jinterp](./src/site/resources/jinterp.jpg?raw=true)
