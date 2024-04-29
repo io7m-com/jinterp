@@ -8,14 +8,14 @@
   <parent>
     <groupId>com.io7m.jinterp</groupId>
     <artifactId>com.io7m.jinterp</artifactId>
-    <version>2.1.0</version>
+    <version>3.0.0-SNAPSHOT</version>
   </parent>
   <artifactId>com.io7m.jinterp.documentation</artifactId>
 
   <packaging>jar</packaging>
   <name>com.io7m.jinterp.documentation</name>
   <description>Interpolation functions (Documentation)</description>
-  <url>http://io7m.github.io/jinterp/</url>
+  <url>https://www.io7m.com/software/jinterp</url>
 
   <properties>
     <mdep.analyze.skip>true</mdep.analyze.skip>

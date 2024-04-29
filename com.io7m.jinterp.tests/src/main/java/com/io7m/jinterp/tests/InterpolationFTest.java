@@ -14,8 +14,10 @@
  * IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-package com.io7m.jinterp;
+package com.io7m.jinterp.tests;
 
+import com.io7m.jinterp.InterpolationF;
+import com.io7m.jinterp.InterpolationFunctionFType;
 import org.junit.Assert;
 import org.junit.Test;
 

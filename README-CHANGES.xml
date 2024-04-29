@@ -25,6 +25,6 @@
     </c:release>
   </c:releases>
   <c:ticket-systems>
-    <c:ticket-system default="false" id="com.github.io7m.jinterp" url="http://github.com/io7m/jinterp/issues/"/>
+    <c:ticket-system default="false" id="com.github.io7m.jinterp" url="http://www.github.com/io7m-com/jinterp/issues/"/>
   </c:ticket-systems>
 </c:changelog>

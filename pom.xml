@@ -11,15 +11,16 @@
 
   <groupId>com.io7m.jinterp</groupId>
   <artifactId>com.io7m.jinterp</artifactId>
-  <version>2.1.0</version>
+  <version>3.0.0-SNAPSHOT</version>
 
   <packaging>pom</packaging>
   <name>com.io7m.jinterp</name>
   <description>Interpolation functions</description>
-  <url>http://github.com/io7m/jinterp</url>
+  <url>https://www.io7m.com/software/jinterp</url>
 
   <modules>
     <module>com.io7m.jinterp.core</module>
+    <module>com.io7m.jinterp.tests</module>
     <module>com.io7m.jinterp.documentation</module>
   </modules>
 
@@ -31,14 +32,14 @@
   <licenses>
     <license>
       <name>ISC</name>
-      <url>http://io7m.com/license/isc.txt</url>
+      <url>https://www.io7m.com/license/isc.txt</url>
     </license>
   </licenses>
 
   <scm>
-    <url>https://github.com/io7m/jinterp</url>
-    <connection>scm:git:https://github.com/io7m/jinterp</connection>
-    <developerConnection>scm:git:https://github.com/io7m/jinterp</developerConnection>
+    <url>https://www.github.com/io7m-com/jinterp</url>
+    <connection>scm:git:https://www.github.com/io7m-com/jinterp</connection>
+    <developerConnection>scm:git:https://www.github.com/io7m-com/jinterp</developerConnection>
   </scm>
 
   <developers>
@@ -51,7 +52,7 @@
   </developers>
 
   <issueManagement>
-    <url>http://github.com/io7m/jinterp/issues</url>
+    <url>http://www.github.com/io7m-com/jinterp/issues</url>
     <system>GitHub Issues</system>
   </issueManagement>
 
@@ -69,7 +70,7 @@
 
   <ciManagement>
     <system>GitHub Actions</system>
-    <url>https://github.com/jinterp/actions</url>
+    <url>https://www.github.com/io7m-com/jinterp/actions</url>
   </ciManagement>
 
   <prerequisites>
