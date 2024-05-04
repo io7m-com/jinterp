@@ -1,0 +1,22 @@
+
+## jinterp
+
+Trivial Java functions to interpolate values.
+
+## Features
+
+* Linear interpolation.
+* Cosine interpolation.
+* Exponential interpolation.
+* Log interpolation.
+* High coverage test suite.
+* [OSGi-ready](https://www.osgi.org/)
+* [JPMS-ready](https://en.wikipedia.org/wiki/Java_Platform_Module_System)
+* ISC license.
+
+## Usage
+
+```
+final double r = InterpolationD.interpolateLinear(0.0, 10.0, 0.5)
+assert r == 5.0
+```

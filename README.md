@@ -13,3 +13,26 @@ jinterp
 | OpenJDK (Temurin) LTS | Linux | [![Build (OpenJDK (Temurin) LTS, Linux)](https://img.shields.io/github/actions/workflow/status/io7m-com/jinterp/main.linux.temurin.lts.yml)](https://www.github.com/io7m-com/jinterp/actions?query=workflow%3Amain.linux.temurin.lts)|
 | OpenJDK (Temurin) Current | Windows | [![Build (OpenJDK (Temurin) Current, Windows)](https://img.shields.io/github/actions/workflow/status/io7m-com/jinterp/main.windows.temurin.current.yml)](https://www.github.com/io7m-com/jinterp/actions?query=workflow%3Amain.windows.temurin.current)|
 | OpenJDK (Temurin) LTS | Windows | [![Build (OpenJDK (Temurin) LTS, Windows)](https://img.shields.io/github/actions/workflow/status/io7m-com/jinterp/main.windows.temurin.lts.yml)](https://www.github.com/io7m-com/jinterp/actions?query=workflow%3Amain.windows.temurin.lts)|
+
+## jinterp
+
+Trivial Java functions to interpolate values.
+
+## Features
+
+* Linear interpolation.
+* Cosine interpolation.
+* Exponential interpolation.
+* Log interpolation.
+* High coverage test suite.
+* [OSGi-ready](https://www.osgi.org/)
+* [JPMS-ready](https://en.wikipedia.org/wiki/Java_Platform_Module_System)
+* ISC license.
+
+## Usage
+
+```
+final double r = InterpolationD.interpolateLinear(0.0, 10.0, 0.5)
+assert r == 5.0
+```
+
