@@ -16,8 +16,6 @@
 
 package com.io7m.jinterp;
 
-import com.io7m.junreachable.UnreachableCodeException;
-
 /**
  * Interpolation functions.
  */
@@ -66,7 +64,7 @@ public final class InterpolationF
 
   /**
    * <p>
-   * Interpolate between <tt>x0</tt> and <tt>x1</tt> based on <tt>a</tt> such
+   * Interpolate between {@code x0} and {@code x1} based on {@code a} such
    * that:
    * </p>
    *
@@ -80,8 +78,8 @@ public final class InterpolationF
    * @param x1
    *          The end value
    * @param a
-   *          The interpolation factor in the range <tt>[0.0, 1.0]</tt>
-   * @return A value between <tt>[x0, x1]</tt>.
+   *          The interpolation factor in the range {@code [0.0, 1.0]}
+   * @return A value between {@code [x0, x1]}.
    */
 
   public static float interpolateCosine(
@@ -102,12 +100,12 @@ public final class InterpolationF
    * formally, the function returns {@code x0 + (factor² * (x1 - x0))} .
    *
    * @param factor
-   *          The interpolation factor in the range <tt>[0.0, 1.0]</tt>
+   *          The interpolation factor in the range {@code [0.0, 1.0]}
    * @param x0
    *          The lower bound.
    * @param x1
    *          The upper bound.
-   * @return A value between <tt>[x0, x1]</tt>.
+   * @return A value between {@code [x0, x1]}.
    */
 
   public static float interpolateExponential(
@@ -115,13 +113,13 @@ public final class InterpolationF
     final float x1,
     final float factor)
   {
-    return InterpolationF.interpolateLinear(x0, x1, factor * factor);
+    return interpolateLinear(x0, x1, factor * factor);
   }
 
   /**
    * <p>
-   * Linearly interpolate between <tt>x0</tt> and <tt>x1</tt> based on
-   * <tt>a</tt> such that:
+   * Linearly interpolate between {@code x0} and {@code x1} based on
+   * {@code a} such that:
    * </p>
    *
    * <pre>
@@ -134,8 +132,8 @@ public final class InterpolationF
    * @param x1
    *          The end value
    * @param a
-   *          The interpolation factor in the range <tt>[0.0, 1.0]</tt>
-   * @return A value between <tt>[x0, x1]</tt>.
+   *          The interpolation factor in the range {@code [0.0, 1.0]}
+   * @return A value between {@code [x0, x1]}.
    */
 
   public static float interpolateLinear(
@@ -155,12 +153,12 @@ public final class InterpolationF
    * {@code x0 + (sqrt(factor) * (x1 - x0))} .
    *
    * @param factor
-   *          The interpolation factor in the range <tt>[0.0, 1.0]</tt>
+   *          The interpolation factor in the range {@code [0.0, 1.0]}
    * @param x0
    *          The lower bound.
    * @param x1
    *          The upper bound.
-   * @return A value between <tt>[x0, x1]</tt>.
+   * @return A value between {@code [x0, x1]}.
    */
 
   public static float interpolateLogarithmic(
@@ -168,12 +166,11 @@ public final class InterpolationF
     final float x1,
     final float factor)
   {
-    return InterpolationF
-      .interpolateLinear(x0, x1, (float) Math.sqrt(factor));
+    return interpolateLinear(x0, x1, (float) Math.sqrt(factor));
   }
 
   private InterpolationF()
   {
-    throw new UnreachableCodeException();
+
   }
 }
