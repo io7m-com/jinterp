@@ -16,8 +16,6 @@
 
 package com.io7m.jinterp;
 
-import com.io7m.junreachable.UnreachableCodeException;
-
 /**
  * Interpolation functions.
  */
@@ -115,7 +113,7 @@ public final class InterpolationD
     final double x1,
     final double factor)
   {
-    return InterpolationD.interpolateLinear(x0, x1, factor * factor);
+    return interpolateLinear(x0, x1, factor * factor);
   }
 
   /**
@@ -168,11 +166,11 @@ public final class InterpolationD
     final double x1,
     final double factor)
   {
-    return InterpolationD.interpolateLinear(x0, x1, Math.sqrt(factor));
+    return interpolateLinear(x0, x1, Math.sqrt(factor));
   }
 
   private InterpolationD()
   {
-    throw new UnreachableCodeException();
+
   }
 }
